@@ -3,6 +3,7 @@
     <el-option
       v-for="item in options"
       :key="item.value"
+      :placement="placement"
       :label="item.label"
       :value="item.value"
     />
@@ -11,6 +12,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+
+const placement = ref('top')
 
 const value = ref('')
 
